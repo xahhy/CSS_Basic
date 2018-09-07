@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*使用属性选择器选中有title属性的div*/
+        div[title] {
+        }
+
+        /*使用属性选择器选中title属性值是demo的div*/
+        div[title="demo"] {
+        }
+
+        /*使用属性选择器选中title属性值包含demo的div*/
+        div[title*="demo"] {
+        }
+
+        /*使用属性选择器选中title属性值是zh或者是zh-开头的div*/
+        div[title|="zh"] {
+        }
+    </style>
+</head>
+<body>
+<div>1</div>
+<div title="demo">2</div>
+<div title="demo-title">3</div>
+<div title="demo-title-second">4</div>
+<div title="zh">5</div>
+<div title="zh-title">6</div>
+<div title="zh-title-second">7</div>
+<div title="zh-title-third">8</div>
+<div title="something-else">9</div>
+<div title="anything-else">10</div>
+</body>
+</html>
