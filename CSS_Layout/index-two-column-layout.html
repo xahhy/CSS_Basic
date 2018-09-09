@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            border:2px solid red;
+        }
+        .left{
+            background: yellow;
+        }
+        .right{
+            width: 200px;
+            background:red;
+        }
+        .content{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <div class="box left">我是一个自适应宽度的左边输入，我支持自动换行不被右边导航栏所遮盖</div>
+    <div class="box right">我是固定右边导航栏</div>
+</div>
+</body>
+</html>
